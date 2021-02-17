@@ -1,0 +1,84 @@
+<div class="col-md-12 class my-3">
+  <h2>Of and from</h2>
+  <br>
+  <br>
+  <strong>OF</strong>
+  <hr>
+
+  <div class="row">
+
+    <div class="col-md-6">
+      <Strong>Data:</Strong>
+      <p class="bg-light py-2 px-3 border rounded">Of('CS','TH','VS') </p>
+      <hr>
+      <ul id='elContainer'></ul>
+    </div>
+
+
+    <div class="col-md-6">
+      <Strong>Data:</Strong>
+      <p class="bg-light py-2 px-3 border rounded">FROM['CS','TH','VS'] </p>
+      <hr>
+      <ul id='elContainer1'></ul>
+    </div>
+
+  </div>
+
+
+  <div class="row">
+
+    <div class="col-md-3">
+      <strong>Names</strong>
+      <hr>
+      <select class="form-control" #name>
+        <option *ngFor="let data of Name" value="{{data}}">
+          {{data}}
+        </option>
+      </select>
+      <br>
+      <br>
+      <strong>Colors</strong>
+      <hr>
+      <select class="form-control" #color>
+        <option *ngFor="let color of Colors" value="{{color}}">
+          {{color}}
+        </option>
+      </select>
+      <br>
+      <br>
+    </div>
+
+
+    <div class="col-md-9 ml-auto">
+      <Strong>CombineLatest:</Strong>
+      <hr>
+      <div class="wrapper" id="elContainer3">
+
+      </div>
+
+
+    </div>
+
+
+    <div class="col-md-9 ml-auto">
+      <Strong>WithLatestFrom:</Strong>
+      <hr>
+      <div class="wrapper" id="elContainer4">
+
+      </div>
+    </div>
+
+
+    <div class="col-md-9 ml-auto">
+      <Strong>Zip:</Strong>
+      <hr>
+      <div class="wrapper" id="elContainer5">
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+</div>
